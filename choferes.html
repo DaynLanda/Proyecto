@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head><title> Choferes</title>
+    <link type="text/css" rel="stylesheet" href="choferes.css">
+    
+</head>
+<body>
+     <table>
+        <tr>
+          <td>
+             <form action="php/datos.php" method="GET" autocomplete="off" onsubmit="onFormSubmit()" >
+   
+               <div>
+                    <p>Control de los Choferes</p>
+                  <label for="carnet">Carnet de Identidad</label><label></label>
+                  <input type="number" name="carnet" id="carnet">
+               </div>
+               <div>
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre">
+               </div>
+               <div>
+                 <label for="papellido">1er Apellido</label>
+                 <input type="text" name="papellido" id="papellido">
+               </div>
+               <div>
+                <label for="sapellido">2do Apellido</label>
+                <input type="text" name="sapellido" id="sapellido">
+              </div>
+               <div>
+                 <label for="edad">Edad</label>
+                 <input type="number" name="edad" id="edad">
+               </div>
+                <div>
+                <label for="sexo">Sexo:</label>
+                <select id="sexo">
+                    <option value=""></option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+            </div>
+             <div>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value=""></option>
+                    <option value="C1">Categoria 1</option>
+                    <option value="C2">Categoria 2</option>
+                    <option value="C3">Categoria 3</option>
+                </select>
+            </div>
+            <div class="form_action--button">
+                  <input type="submit" value="Agregar" name="enviar">  
+                  <input type="reset" value="Resetear">
+              </div>
+            </form>
+          </td>
+      <td>
+         <table class="list" id="listachoferes">
+    <thead>
+      <tr>
+         <th>CI</th>
+         <th>Nombre</th>
+         <th>1er Apellido</th>
+         <th>2do Apellido</th>
+         <th>Edad</th>
+         <th>Sexo</th>
+         <th>Categoría</th>
+      </tr>
+    </thead>
+  <tbody>
+
+</tbody>
+       </table>
+     </td>
+     </tr>
+     </table>
+         <script type="text/javascript"  src="script/choferes.js"></script>
+   </body>
+</html>

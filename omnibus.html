@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head><title> Omnibus</title>
+    <link type="text/css" rel="stylesheet" href="omnibus.css">
+    
+</head>
+<body>
+     <table>
+        <tr>
+          <td>
+             <form autocomplete="off" onsubmit="onFormSubmit()" >
+   
+               <div>
+                    <p>Control de los Omnibus</p>
+                  <label for="placa">Placa</label><label></label>
+                  <input type="text" name="placa" id="placa">
+               </div>
+               <div>
+                  <label for="marca">Marca</label>
+                  <input type="text" name="marca" id="marca">
+               </div>
+               <div>
+                 <label for="capacidad">Capacidad</label>
+                 <input type="number" name="capacidad" id="capacidad">
+               </div>
+               <div>
+                 <label for="km">KM</label>
+                 <input type="number" name="km" id="km">
+               </div>
+   
+               <div class="form_action--button">
+                  <input type="submit" value="Agregar">  
+                  <input type="reset" value="Resetear">
+                  
+
+               </div>
+            </form>
+          </td>
+      <td>
+         <table class="list" id="listaomnibus">
+    <thead>
+      <tr>
+         <th>Placa</th>
+         <th>Marca</th>
+         <th>Capacidad</th>
+         <th>KM</th>
+      </tr>
+    </thead>
+  <tbody>
+
+</tbody>
+       </table>
+     </td>
+     </tr>
+     </table>
+         <script type="text/javascript"  src="script/omnibus.js"></script>
+   </body>
+</html>

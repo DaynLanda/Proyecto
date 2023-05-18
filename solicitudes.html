@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head><title> Solicitudes</title>
+    <link type="text/css" rel="stylesheet" href="solicitudes.css">
+    
+</head>
+<body>
+     <table>
+        <tr>
+          <td>
+             <form autocomplete="off" onsubmit="onFormSubmit()" >
+   
+               <div>
+                    <p>Control de Solicitudes</p>
+                  <label for="codsolicitud">Código Solicitud</label><label></label>
+                  <input type="number" name="codsolicitud" id="codsolicitud">
+               </div>
+               <div>
+                  <label for="codgrupo">Código Grupo</label>
+                  <input type="number" name="codgrupo" id="codgrupo">
+               </div>
+               <div>
+                 <label for="pais">País Grupo</label>
+                 <input type="text" name="pais" id="pais">
+               </div>
+               <div>
+                 <label for="cantidad">Cantidad Turistas</label>
+                 <input type="number" name="cantidad" id="cantidad">
+               </div>
+               <div>
+                <label for="dias">Cantidad Días</label>
+                <input type="number" name="dias" id="dias">
+              </div>
+              
+
+              <div class="form_action--button">
+                  <input type="submit" value="Agregar">  
+                  <input type="reset" value="Resetear">
+              </div>
+            </form>
+          </td>
+      <td>
+         <table class="list" id="listasolicitud">
+    <thead>
+      <tr>
+         <th>Código Solicitud</th>
+         <th>Código Grupo</th>
+         <th>País Grupo</th>
+         <th>Cantidad Turistas</th>
+         <th>Cantidad Días</th>
+     </tr>
+    </thead>
+  <tbody>
+
+</tbody>
+       </table>
+     </td>
+     </tr>
+     </table>
+         <script type="text/javascript"  src="script/solicitudes.js"></script>
+   </body>
+</html>

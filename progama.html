@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head><title> Programa</title>
+    <link type="text/css" rel="stylesheet" href="programa.css">
+    
+</head>
+<body>
+     <table>
+        <tr>
+          <td>
+             <form autocomplete="off" onsubmit="onFormSubmit()" >
+   
+               <div>
+                    <p><strong>Control del Programa</strong> </p>
+                  <label for="codprograma">Código Programa</label><label></label>
+                  <input type="number" name="codprograma" id="codprograma">
+               </div>
+               <div>
+                  <label for="nomprograma">Nombre Programa</label>
+                  <input type="text" name="nomprograma" id="nomprograma">
+               </div>
+               <div>
+                 <label for="km">KM Recorrer</label>
+                 <input type="number" name="km" id="km">
+               </div>
+               <div>
+                 <label for="codtipo">Código Tipo Programación</label>
+                 <input type="number" name="codtipo" id="codtipo">
+               </div>
+               <div>
+                <label for="nomtipo">Nombre Tipo Programación</label>
+                <select id="nomtipo">
+                  <option value=""></option>
+                  <option value="transfer">Transfer</option>
+                  <option value="visita">Visita</option>
+                  <option value="circuito">Circuito</option>
+                  <option value="excursion">Excursión</option>
+              </select>
+              </div>
+              <div class="form_action--button">
+                  <input type="submit" value="Agregar">  
+                  <input type="reset" value="Resetear">
+              </div>
+            </form>
+          </td>
+      <td>
+         <table class="list" id="listaprograma">
+    <thead>
+      <tr>
+         <th>Código Programa</th>
+         <th>Nombre Programa</th>
+         <th>KM Recorrer</th>
+         <th>Código Tipo Programación</th>
+         <th>Nombre Tipo Programación</th>
+     </tr>
+    </thead>
+  <tbody>
+
+</tbody>
+       </table>
+     </td>
+     </tr>
+     </table>
+         <script type="text/javascript"  src="script/programa.js"></script>
+   </body>
+</html>
